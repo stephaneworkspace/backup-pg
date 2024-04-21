@@ -1,5 +1,6 @@
 #!/bin/bash
 source /home/arch/swift-env/bin/activate
+cd /home/arch/backup-pg/
 CONTAINER_NAME="default"
 DIRECTORY_NAME="pg_arch"
 
@@ -19,3 +20,5 @@ do
 done
 
 #swift list $CONTAINER_NAME --prefix $DIRECTORY_NAME/
+rm -rf $DIRECTORY_NAME
+
